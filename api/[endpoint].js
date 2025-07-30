@@ -3,7 +3,8 @@ import axios from 'axios';
 const BASE_URL = "http://140.245.5.226:3000";
 
 const handler = async (req, res) => {
-  const endpoint = req.query.endpoint || req.params?.endpoint || req.url.split("/").pop();
+  const fullUrl = new URL(req.url, `http://${req.headers.host}`);
+  const endpoint = fullUrl.pathname.split("/").pop();
   const method = req.method.toLowerCase();
 
   const urlMap = {
