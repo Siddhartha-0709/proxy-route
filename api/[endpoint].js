@@ -18,11 +18,15 @@ const handler = async (req, res) => {
 
   const urlMap = {
     "server-status": "/",
-    "get-incident": "/api/v1/incident/get-incident",
     "new-incident": "/api/v1/incident/new-incident",
     "explicit-new-incident": "/api/v1/incident/explicit-new-incident",
     "resolve-incident": "/api/v1/incident/incident-resolve",
-    "open-incidents": "/api/v1/incident/incident-open"
+    
+    "open-incidents": "/api/v1/incident/incident-open",
+    
+    "get-incident-by-user": "/api/v1/incident/get-incident",
+    "get-incident-by-id": "/api/v1/incident/incident-by-id",
+    "get-all-incidents": "/api/v1/incident/get-all",
   };
 
   const targetPath = urlMap[endpoint];
