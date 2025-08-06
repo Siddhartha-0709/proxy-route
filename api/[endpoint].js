@@ -27,7 +27,7 @@ const handler = async (req, res) => {
     "get-incident-by-user": "/api/v1/incident/get-incident",
     "get-incident-by-id": "/api/v1/incident/incident-by-id",
     "get-all-incidents": "/api/v1/incident/get-all",
-
+    "get-incident-by-assigned-to": "api/v1/incident/get-incident-by-assigned-to",
 
     "signup": "/api/v1/user/create-user",
     "login": "/api/v1/user/login-user",
