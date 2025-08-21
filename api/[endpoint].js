@@ -33,6 +33,8 @@ const handler = async (req, res) => {
     "login": "/api/v1/user/login-user",
     "get-user": "/api/v1/user/get-user",
     "delete-user": "/api/v1/user/delete-user",
+
+    "admin":"/api/v1/incident/admin-info"
   };
 
   const targetPath = urlMap[endpoint];
